@@ -1,7 +1,7 @@
 "use strict"
-const canvasF = document.getElementById('canvasFreq')
+const canvasF = <HTMLCanvasElement> document.getElementById('canvasFreq')
 const canvasCtx = canvasF.getContext('2d')
-const canvasT = document.getElementById('canvasTime')
+const canvasT = <HTMLCanvasElement> document.getElementById('canvasTime')
 const canvasTCtx = canvasT.getContext('2d')
 const freqText = document.getElementById("freq")
 canvasCtx.fillStyle = 'orange'
@@ -27,7 +27,7 @@ if (navigator.mediaDevices) {
         freqs.forEach((v, i) => {
           canvasCtx.fillRect(i * 5, canvasF.height - v - 50, 5, v)
         })
-        freqText.innerText = freqs.indexOf(Math.max(...freqs)) * freqIndex2freq
+        freqText.innerText =  `${freqs.indexOf(Math.max(...(freqs))) * freqIndex2freq}`
         analyser.getByteTimeDomainData(times)
         times.forEach((v, i) => {
           canvasTCtx.fillRect(i * 2, canvasT.height - v - 50, 2, v)
