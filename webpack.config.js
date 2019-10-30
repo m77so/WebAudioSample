@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   mode: 'development',
   entry: './src/main.ts',
@@ -17,5 +19,8 @@ module.exports = {
       '.ts',
       '.js'
     ]
+  },
+  output: {
+    path: path.resolve(__dirname, "docs"), 
   }
 };
