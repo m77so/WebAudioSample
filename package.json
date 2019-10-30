@@ -9,12 +9,13 @@
     "build": "webpack"
   },
   "dependencies": {
+    "fft-js": "^0.0.12",
     "ts-loader": "^4.0.1",
     "tslint": "^5.9.1",
     "tslint-config-standard": "^7.0.0",
     "tslint-loader": "^3.6.0",
     "typescript": "^2.7.2",
-    "webpack": "^4.1.1",
-    "webpack-cli": "^2.0.12"
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9"
   }
 }
