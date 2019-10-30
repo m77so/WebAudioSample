@@ -8,7 +8,9 @@
 
   <title>sample</title>
 
-  <link rel="stylesheet" href="">
+  <style>
+  canvas{display:block;}
+  </style>
   <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -16,20 +18,21 @@
 
 <body>
   <h1>sample</h1>
-
+<div style='width:100%'>
   FFT最大値<span id="freq"></span>Hz<br />
   自己相関<span id="self"></span>Hz<br/>
   <br />
   Color
-  <canvas id="canvasColor" width="1000" height="300"></canvas> <br>
+  <canvas id="canvasColor" ></canvas> <br>
   FFT
-  <canvas id="canvasFreq" width="1000" height="300"></canvas><br>
+  <canvas id="canvasFreq" ></canvas><br>
   Time
-  <canvas id="canvasTime" width="1000" height="300"></canvas><br>
+  <canvas id="canvasTime"></canvas><br>
   <script src="dist/main.js">
     
     </script>
 <br><a href="https://github.com/m77so/WebAudioSample">Github</a>    
+</div>
 </body>
 
 </html>
