@@ -75,7 +75,7 @@ if (navigator.mediaDevices) {
         }
         for(let i = 0; i < freq_logs.length; i++){
           const v = (ampl_logs[i]-128 ) 
-          const vv = (canvasF.height)/128*v*5
+          const vv = (canvasF.height)/128*v*2
           canvasCCtx.fillStyle = `hsl(${(1/3+Math.log2(freq_logs[i]*freqIndex2freq /440))%1*360 },100%,50%)`
           canvasCCtx.fillRect(i*barwidth,canvasC.height-vv,barwidth/2,vv )
         }
